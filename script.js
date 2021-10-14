@@ -10,7 +10,7 @@ async function createUser (user) {
       'Accept': 'application/json',
       'Content-Type': 'application/json'
     },
-    body: user,
+    body: JSON.stringify(user),
   },
   console.log('fetch'));
   const content = await rawResponse.json();
