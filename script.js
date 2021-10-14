@@ -4,7 +4,7 @@ let nameCol = document.querySelector('.input_name')
 async function createUser (user) {
   console.log(user)
   const rawResponse = await fetch('https://kurs-db.herokuapp.com/db', {
-    mode: 'no-cors',
+    // mode: 'no-cors',
     method: 'POST',
     headers: {
       'Accept': 'application/json',
