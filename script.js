@@ -10,11 +10,11 @@ async function createUser (user) {
       'Accept': 'application/json',
       'Content-Type': 'application/json'
     },
-    body: JSON.stringify(user),
+    body: user,
   },
   console.log('fetch'));
-//  const content = await rawResponse.json();
-// console.log(content)
+  const content = await rawResponse.json();
+  console.log(content)
 };
 
 document.querySelector('.send_btn').addEventListener('click', () => {
