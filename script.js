@@ -13,8 +13,8 @@ async function createUser (user) {
     body: JSON.stringify(user),
   },
   console.log('fetch'));
- // const content = await rawResponse.json();
- // console.log(content)
+  const content = await rawResponse.json();
+  console.log(content)
 };
 
 document.querySelector('.send_btn').addEventListener('click', () => {
